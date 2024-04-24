@@ -1,3 +1,8 @@
+##======================================================================
+## https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ
+## video 15/69
+##======================================================================
+
 '''Below are all linear search related problems mostly from leetcode, 
 uncomment problem you want to text and comment it back before testing 
 next problem or else duplicate error will occure'''
