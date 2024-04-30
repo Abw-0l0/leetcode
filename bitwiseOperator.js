@@ -27,11 +27,39 @@
 // console.log(unique(arr))
 
 //======================================================================
-// base of number
+// digits in number
 //======================================================================
 
-const a = 10
-const b = 2
+// const a = 10
+// const b = 2
 
-const ans = Math.floor(Math.log(a)/Math.log(b)+1)
+// const ans = Math.floor(Math.log(a)/Math.log(b)+1)
+// console.log(ans)
+
+//======================================================================
+// power of two
+//======================================================================
+
+// const n = 14
+// ans = (n & (n-1)) == 0 //Fix for 0
+
+// console.log(ans)
+
+//======================================================================
+// power
+//======================================================================
+
+let power = 6
+let base = 3
+
+let ans = 1
+
+while(power>0){
+    if((power&1)==1){
+        ans*=base
+    }
+    base *= base
+    power = power>>1
+}
+
 console.log(ans)
