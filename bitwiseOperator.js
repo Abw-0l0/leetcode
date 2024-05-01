@@ -49,17 +49,52 @@
 // power
 //======================================================================
 
-let power = 6
-let base = 3
+// let power = 6
+// let base = 3
 
-let ans = 1
+// let ans = 1
 
-while(power>0){
-    if((power&1)==1){
-        ans*=base
+// while(power>0){
+//     if((power&1)==1){
+//         ans*=base
+//     }
+//     base *= base
+//     power = power>>1
+// }
+
+// console.log(ans)
+
+//======================================================================
+// no of n's in binary
+//======================================================================
+
+// const setBits = function(n){
+//     let count=0
+//     while(n>0){
+//         count++
+//         n=n&(n-1)
+//     }
+//     return count
+// }
+
+// let n = 101
+// console.log(n.toString(2))
+// console.log(setBits(n))
+
+//======================================================================
+// no of n's in binary
+//======================================================================
+
+var flipAndInvertImage = function(image) {
+    for(let j=0;j<image.length;j++){
+        for(let i=0;i<Math.floor((image[0].length+1)/2);i++){
+            let temp = image[j][i]^1
+            image[j][i] = image[j][image[j].length-i-1]^1
+            image[j][image[j].length-i-1] = temp
+        }
     }
-    base *= base
-    power = power>>1
-}
+    return image
+};
 
-console.log(ans)
+image = [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]
+console.log(flipAndInvertImage(image))
