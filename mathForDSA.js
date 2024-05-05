@@ -26,22 +26,67 @@
 // prime number in range n
 //======================================================================
 
-var isPrime = function(n,prime) {
-    for(let i=2;i*i<=n;i++){
-        if(!prime[i]){
-            for(let j=i*2;j<=n;j+=i){
-                prime[j]=true
-            }
+// var isPrime = function(n,prime) {
+//     for(let i=2;i*i<=n;i++){
+//         if(!prime[i]){
+//             for(let j=i*2;j<=n;j+=i){
+//                 prime[j]=true
+//             }
+//         }
+//     }
+//     for(let i=2;i<=n;i++){
+//         if(!prime[i]){
+//             console.log(i," ")
+//         }
+//     }
+// };
+
+// let n = 40;
+// let prime = new Array(n+1).fill(false);
+
+// isPrime(n, prime)
+
+//======================================================================
+// for square root
+//======================================================================
+
+var squareRoot = function(n,p) {
+    let s=0;
+    let e=n;
+    let root=0.0;
+    let dem=0
+    let demcheck = true
+    while(s<=e){
+        let m = Math.floor(s+(e-s)/2);
+        dem = m
+        if(m*m==n){
+            return m
+        }
+        if(m*m>n){
+            e=m-1
+            demcheck=true
+        } else {
+            s=m+1
+            demcheck=false
         }
     }
-    for(let i=2;i<=n;i++){
-        if(!prime[i]){
-            console.log(i," ")
-        }
+    if(demcheck){
+        root=dem-1
+    } else {
+        root=dem+1
     }
+    let incr = 0.1;
+    for(let i=0;i<p;i++){
+        while(root*root<=n){
+            root+=incr
+        }
+        root-=incr;
+        incr/=10;
+    }
+    return root;
 };
 
-let n = 40;
-let prime = new Array(n+1).fill(false);
+let n = 36;
+let p = 3;
 
-isPrime(n, prime)
+console.log(squareRoot(n, p).toFixed(p))
