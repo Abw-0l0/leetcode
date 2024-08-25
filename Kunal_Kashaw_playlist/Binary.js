@@ -4,7 +4,7 @@
 //======================================================================
 
 //======================================================================
-// 34. Find First and Last Position of Element in Sorted Array
+// leetcode : 34. Find First and Last Position of Element in Sorted Array
 //======================================================================
 
 // var searchRange = function (nums, target) {
@@ -78,7 +78,7 @@
 // console.log(ans(nums, target));
 
 //======================================================================
-// 852. Peak Index in a Mountain Array
+// leetcode : 852. Peak Index in a Mountain Array
 //======================================================================
 
 // var ans = function (arr) {
@@ -101,7 +101,7 @@
 // console.log(ans(arr));
 
 //======================================================================
-// 1095. Find in Mountain Array
+// leetcode : 1095. Find in Mountain Array
 //======================================================================
 
 // var findPeak = function (arr) {
@@ -172,7 +172,7 @@
 // console.log(findInMountainArray(target, mountainArr));
 
 //======================================================================
-// *** 33. Search in Rotated Sorted Array
+// leetcode : 33. Search in Rotated Sorted Array
 //======================================================================
 
 // var findPivot = function (arr) {
@@ -231,7 +231,7 @@
 //   console.log(search(arr, target));
 
 //======================================================================
-// *** 81. Search in Rotated Sorted Array II (with duplicates)
+// leetcode : 81. Search in Rotated Sorted Array II (with duplicates)
 //======================================================================
 
 // var findPivot = function (arr) {
@@ -311,7 +311,7 @@
 // console.log(search(arr, target));
 
 //======================================================================
-// 410. Split Array Largest Sum
+// leetcode : 410. Split Array Largest Sum
 //======================================================================
 
 // var splitArray = function (nums, target) {
@@ -349,7 +349,7 @@
 // console.log(splitArray(nums, k));
 
 //======================================================================
-// 4. Median of Two Sorted Arrays             Assignment
+// leetcode : 4. Median of Two Sorted Arrays             Assignment
 //======================================================================
 
 // var findMedianSortedArrays = function (nums1, nums2) {
@@ -372,7 +372,7 @@
 // console.log(findMedianSortedArrays(nums1, nums2));
 
 //======================================================================
-// 154. Find Minimum in Rotated Sorted Array II           Assignment
+// leetcode : 154. Find Minimum in Rotated Sorted Array II           Assignment
 //======================================================================
 
 // var findPivot = function (arr) {
@@ -417,7 +417,7 @@
 // console.log(findMin(arr));
 
 //======================================================================
-// 315. Count of Smaller Numbers After Self           Assignment
+// leetcode : 315. Count of Smaller Numbers After Self           Assignment
 //======================================================================
 
 var search = function (arr, target, start, end) {

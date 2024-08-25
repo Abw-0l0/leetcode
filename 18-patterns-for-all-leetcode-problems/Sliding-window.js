@@ -1,7 +1,10 @@
-function minWindow(s, t) {
+//======================================================================
+// leetcode : 76. Minimum Window Substring
+//======================================================================
+
+function slidingWindow(s, t) {
     if (t.length > s.length) return "";
     
-    // Create a map to store the frequency of characters in the target string
     let map = new Map();
     for (let c of t) {
         map.set(c, (map.get(c) || 0) + 1);
@@ -44,7 +47,16 @@ function minWindow(s, t) {
     return s.substring(head, head + len);
 }
 
-let p = "abc"
-let t = "cbaebabacd"
+let s = "ADOBECODEBANC"
+let t = "ABC"
 
-console.log(slidingWindow(t,p))
+console.log(slidingWindow(s,t))
+
+// let t = "aba"
+
+// let map = new Map();
+// for (let c of t) {
+//     map.set(c, (map.get(c) || 0) + 1);
+// }
+
+// console.log(map)

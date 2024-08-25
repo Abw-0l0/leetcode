@@ -1,5 +1,5 @@
 //======================================================================
-// 81. Search in Rotated Sorted Array II (with duplicates)
+// leetcode : 81. Search in Rotated Sorted Array II (with duplicates)
 //======================================================================
 
 // var findPivot = function (arr) {
@@ -79,7 +79,7 @@
 // console.log(search(arr, target));
 
 //======================================================================
-// 410. Split Array Largest Sum
+// leetcode : 410. Split Array Largest Sum
 //======================================================================
 
 // var splitArray = function (nums, target) {
