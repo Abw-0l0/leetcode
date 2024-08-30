@@ -47,7 +47,7 @@ function slidingWindow(s, t) {
     return s.substring(head, head + len);
 }
 
-let s = "ADOBECODEBANC"
+let s = "ABECCCCAABBBBAC"
 let t = "ABC"
 
 console.log(slidingWindow(s,t))
