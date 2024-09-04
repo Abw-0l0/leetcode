@@ -44,29 +44,3 @@
 // console.log(slidingWindow(s,t))
 
 
-function lengthOfLongestSubstring(s) {
-    let map = new Map();
-    let begin = 0, end = 0, counter = 0, d = 0;
-
-    while (end < s.length) {
-        let c = s[end];
-        map.set(c, (map.get(c) || 0) + 1);
-        if (map.get(c) > 1) counter++;
-        end++;
-
-        while (counter > 0) {
-            let charTemp = s[begin];
-            if (map.get(charTemp) > 1) counter--;
-            map.set(charTemp, map.get(charTemp) - 1);
-            begin++;
-        }
-
-        d = Math.max(d, end - begin);
-    }
-
-    return d;
-}
-
-// Example usage:
-let s = "abcabcbb";
-console.log(lengthOfLongestSubstring(s)); 
